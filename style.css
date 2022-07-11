@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0%;
+  color: #00397A;
+}
+.name {
+  font-family: "Libre Baskerville", serif;
+  font-size: 60px;
+  margin-top: 60px;
+}
+.my-description {
+  max-width: 58%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+/* .about-me h1 {
+  animation: about-me 2s;
+} */
+.my-info {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.skills-section {
+  padding: 60px 72px;
+  position: relative;
+}
+.background:before {
+  background-attachment: scroll;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: scale(1);
+  width: 100%;
+  z-index: -1;
+  opacity: 0.07;
+  /* background-image: url(body_background.svg); */
+  background-image: url(body_background.jpg);
+  background-size: 600px;
+  background-repeat: repeat;
+}
+.skillset-grid {
+  display: flex;
+}
+.skills-info {
+  padding-right: 40px;
+  flex: 1;
+  padding-top: 40px;
+}
+.skills-info h2 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 30px;
+}
+
+.languages-frameworks-info {
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.languages-description {
+  font-size: 17px;
+  line-height: 150%;
+  margin-top: 0%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+}
+.programming-languages-info {
+  flex-basis: 50%;
+  padding-right: 44px;
+  padding-left: 44px;
+}
+
+.motivation-section {
+  background-color: #0384CE;
+  display: flex;
+  height: 600px;
+}
+.motivation-image {
+  background-image: url(motivation.jpg);
+  background-position: center;
+  background-size: 700px;
+  flex: 2;
+}
+.motivation-quote {
+  padding: 60px;
+  flex: 2;
+  align-self: center;
+  color: black;
+}
+.motivation-quote h4 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.quote {
+  font-size: 18px;
+  line-height: 150%;
+  font-family: "Poppins", sans-serif;
+  padding-top: 25px;
+}
+.heading-font {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+}
+.logos-section {
+  display: flex;
+}
+.logos {
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 24vw;
+  height: 120px;
+  display: flex;
+  visibility: hidden;
+}
+.logos:first-child {
+  background-color: #42B3E5;
+}
+.logos:nth-child(2) {
+  background-color: #0384CE;
+}
+.logos:nth-child(3) {
+  background-color: #3156A3;
+}
+.logos:nth-child(4) {
+  background-color: #263285;
+}
+.logos:nth-child(5) {
+  background-color: #0a0c70;
+}
+.projects-section {
+  padding: 60px 72px;
+  color: #00397A;
+}
+.works-info {
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  text-align: center;
+}
+.my-projects-heading {
+  text-align: center;
+}
+.projects {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  column-gap: 70px;
+}
+.card-title {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+}
+.card {
+  box-shadow: rgb(149 157 165 / 20%) 0px 6px 24px;
+  transition: 0.5s;
+  border: none !important;
+}
+.card:hover {
+  transform: scale(1.03);
+  z-index: 1;
+}
+
+.card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+.footer {
+  height: 400px;
+  background-color: #263285;
+  padding: 60px 72px;
+  color: #fff;
+}
+.social-media {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.apps a {
+  padding: 0 35px;
+  display: inline-block;
+}
+.apps {
+  text-align: center;
+  padding-top: 20px;
+}
+.apps img {
+  transition: transform 0.1s ease-in-out;
+}
+.apps img:hover {
+  transform: scale(1.2);
+}
+.copyright {
+  padding-top: 100px;
+}
+.last-section {
+  display: flex;
+  padding-top: 25px;
+  text-align: center;
+}
+.last-section > div {
+  flex: 1;
+}
+.last-section > div:first-child {
+  text-align: left;
+}
+.last-section > div:last-child {
+  text-align: right;
+}
+.title {
+  font-size: 40px;
+}
+.title:before {
+  height: 30px !important;
+  width: 24px !important;
+  background: url(icons/TitleSupporter.png);
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 8px;
+}
+.about-me {
+  width: 100%;
+  overflow: hidden;
+}
+.about-me .my-description {
+  animation: slide-left 2s ease-in-out;
+}
+.about-me .my-description.second {
+  opacity: 0;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 200%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 21%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+@media (max-width: 992px) {
+  .my-description {
+    max-width: 100%;
+    padding: 0 30px 30px;
+  }
+  .motivation-section {
+    height: 420px;
+  }
+  .motivation-quote {
+    padding: 30px;
+  }
+  .skills-info {
+    padding-right: 20px;
+  }
+  .skills-section {
+    padding: 50px 30px;
+  }
+  .programming-languages-info {
+    padding: 0 30px;
+  }
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 200%;
+      opacity: 0;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
