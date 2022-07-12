@@ -3,7 +3,7 @@
 }
 body {
   margin: 0%;
-  color: #00397A;
+  color: #00397a;
 }
 .name {
   font-family: "Libre Baskerville", serif;
@@ -28,7 +28,7 @@ body {
 }
 .background:before {
   background-attachment: scroll;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   left: 0;
@@ -77,7 +77,7 @@ body {
 }
 
 .motivation-section {
-  background-color: #0384CE;
+  background-color: #0384ce;
   display: flex;
   height: 600px;
 }
@@ -123,13 +123,13 @@ body {
   visibility: hidden;
 }
 .logos:first-child {
-  background-color: #42B3E5;
+  background-color: #42b3e5;
 }
 .logos:nth-child(2) {
-  background-color: #0384CE;
+  background-color: #0384ce;
 }
 .logos:nth-child(3) {
-  background-color: #3156A3;
+  background-color: #3156a3;
 }
 .logos:nth-child(4) {
   background-color: #263285;
@@ -139,7 +139,7 @@ body {
 }
 .projects-section {
   padding: 60px 72px;
-  color: #00397A;
+  color: #00397a;
 }
 .works-info {
   font-family: "Poppins", sans-serif;
@@ -176,9 +176,8 @@ body {
   line-height: 150%;
 }
 .footer {
-  height: 400px;
   background-color: #263285;
-  padding: 60px 72px;
+  padding: 60px 72px 0px;
   color: #fff;
 }
 .social-media {
@@ -202,7 +201,7 @@ body {
   transform: scale(1.2);
 }
 .copyright {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 .last-section {
   display: flex;
@@ -283,11 +282,122 @@ body {
       width: 200%;
       opacity: 0;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
       opacity: 1;
     }
+  }
+}
+@media (max-width: 576px) {
+  .my-description {
+    padding: 0px 30px 10px 30px;
+  }
+  .about-me .my-description .name {
+    font-size: 27px;
+    margin-top: 20px;
+  }
+  .about-me .my-description .my-info {
+    font-size: 14px;
+  }
+  .motivation-section {
+    flex-direction: column-reverse;
+  }
+  .motivation-quote h4 {
+    font-size: 23px;
+  }
+  .motivation-section .motivation-quote{
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .motivation-section .motivation-quote .quote {
+    font-size: 14px;
+    padding-top: 15px;
+  }
+  .skills-section {
+    padding: 25px 20px;
+  }
+  .skillset-grid {
+    display: block;
+  }
+  .skillset-grid .skills-info h2 {
+    font-size: 23px;
+  }
+  .skillset-grid .skills-info {
+    padding-top: 20px;
+  }
+  .skillset-grid .skills-info .languages-description {
+    font-size: 15px;
+  }
+  .languages-frameworks-info {
+    display: block;
+    margin-top: 10px;
+  }
+  .languages-frameworks-info .programming-languages-info {
+    padding: 0px;
+    margin-bottom: 15px;
+  }
+  .languages-frameworks-info .programming-languages-info .heading-font {
+    font-size: 18px;
+  }
+  .languages-frameworks-info
+    .programming-languages-info
+    .languages-description {
+    font-size: 14px;
+  }
+  .logos-section .logos img {
+    height: 40px;
+  }
+  .logos-section .logos {
+    height: 90px;
+  }
+  .projects-section {
+    padding: 30px 30px;
+  }
+  .projects-section h2 {
+    font-size: 25px;
+  }
+  .projects {
+    margin-left: 14px;
+  }
+  .title:before {
+    height: 20px !important;
+    width: 15px !important;
+  }
+  .projects-section .works-info {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .projects-section .projects {
+    display: block;
+  }
+  .card {
+    margin-bottom: 40px;
+  }
+  .footer {
+    padding: 20px 20px;
+  }
+  .footer .social-media-apps p {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .footer .social-media-apps a {
+    padding: 0px 10px;
+  }
+  .footer .social-media-apps a img {
+    height: 25px;
+  }
+  .footer .copyright {
+    padding-top: 40px;
+  }
+  .footer .copyright .last-section {
+    display: block;
+  }
+  .last-section > div:first-child {
+    text-align: center;
+  }
+  .last-section > div:last-child {
+    text-align: center;
   }
 }
