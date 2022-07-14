@@ -40,7 +40,7 @@ body {
   z-index: -1;
   opacity: 0.07;
   /* background-image: url(body_background.svg); */
-  background-image: url(body_background.jpg);
+  background-image: url(/Background/body_background.jpg);
   background-size: 600px;
   background-repeat: repeat;
 }
@@ -82,7 +82,7 @@ body {
   height: 600px;
 }
 .motivation-image {
-  background-image: url(motivation.jpg);
+  background-image: url("/Background/motivation.jpg");
   background-position: center;
   background-size: 700px;
   flex: 2;
@@ -223,7 +223,7 @@ body {
 .title:before {
   height: 30px !important;
   width: 24px !important;
-  background: url(icons/TitleSupporter.png);
+  background: url(/icons/TitleSupporter.png);
   content: "";
   display: inline-block;
   background-size: contain;
@@ -302,14 +302,18 @@ body {
     font-size: 14px;
   }
   .motivation-section {
-    flex-direction: column-reverse;
+    display: block;
+    height: 230px;
+  }
+
+  .motivation-section .motivation-image { 
+    height: 0px;
   }
   .motivation-quote h4 {
     font-size: 23px;
   }
   .motivation-section .motivation-quote{
-    padding: 20px;
-    margin-top: 10px;
+    padding: 25px;
   }
   .motivation-section .motivation-quote .quote {
     font-size: 14px;
