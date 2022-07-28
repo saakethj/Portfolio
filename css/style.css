@@ -183,6 +183,14 @@ body {
   text-align: center;
   font-weight: bold;
 }
+
+.github_repo_links a{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+}
+
 .apps a {
   padding: 0 35px;
   display: inline-block;
